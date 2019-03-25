@@ -392,14 +392,14 @@ template {
 @font-face {
   font-family: "AvenirNext";
   src: url("../fonts/AvenirNext-Regular.woff") format("woff"), url("../fonts/AvenirNext-Regular.woff") format("woff2");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "AvenirNext";
   src: url("../fonts/AvenirNext-Regular.woff2") format("woff"), url("../fonts/AvenirNext-Regular.woff2") format("woff2");
-  font-weight: 400;
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -421,14 +421,14 @@ template {
   font-family: "AvenirNext";
   src: url("../fonts/AvenirNext-Bold.woff") format("woff"), url("../fonts/AvenirNext-Bold.woff") format("woff2");
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "AvenirNext";
   src: url("../fonts/AvenirNext-Bold.woff2") format("woff"), url("../fonts/AvenirNext-Bold.woff2") format("woff2");
   font-weight: bold;
-  font-style: italic;
+  font-style: normal;
 }
 
 @font-face {
@@ -545,4 +545,77 @@ body {
   display: block;
   font-size: 18px;
   margin-bottom: 18px;
+}
+
+.slider-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider-text {
+  position: relative;
+  top: -530px;
+}
+
+.slider__arrow {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.slider__arrow--back {
+  top: 60%;
+  left: -73px;
+}
+
+.slider__arrow--next {
+  top: 60%;
+  right: -73px;
+}
+
+.slider__pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.slider__dots {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  border: 3px solid #ffbb00;
+  cursor: pointer;
+}
+
+.slider__dots:not(:last-child) {
+  margin-right: 27px;
+}
+
+.slider__dots--active {
+  width: 25px;
+  height: 25px;
+  border: 13px solid #ffbb00;
+}
+
+.slider__title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 39px;
+  font-family: 'AvenirNext';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  width: 720px;
+  text-transform: uppercase;
+}
+
+.slider__button {
+  font-size: 16px;
+  line-height: 20px;
 }

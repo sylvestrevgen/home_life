@@ -7,10 +7,10 @@
 }
 
 .menu__link {
-  color: #010101;
+  color: $main-text-color;
   transition: color 0.2s linear;
 
   &:hover {
-    color: #ffbb00;
+    color: $main-color;
   }
 }

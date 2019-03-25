@@ -1,0 +1,74 @@
+.slider-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.slider-text {
+  position: relative;
+  top: -530px;
+}
+
+.slider {
+  &__arrow {
+    position: absolute;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  &__arrow--back {
+    top: 60%;
+    left: -73px;
+  }
+
+  &__arrow--next {
+    top: 60%;
+    right: -73px;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__dots {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 3px solid $main-color;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+    
+  }
+
+  &__dots--active {
+    width: 25px;
+    height: 25px;
+    border: 13px solid $main-color;
+  
+  }
+
+  &__title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 39px;
+    font-family: 'AvenirNext';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    width: 720px;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
