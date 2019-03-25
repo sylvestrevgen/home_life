@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 69px;
+  min-width: 435px;
+}
+
+.menu__link {
+  color: #010101;
+  transition: color 0.2s linear;
+
+  &:hover {
+    color: #ffbb00;
+  }
+}

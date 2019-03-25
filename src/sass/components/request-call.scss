@@ -1,0 +1,13 @@
+.request-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 46px 0 12px 0;
+}
+
+.request-call__number {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 18px;
+}
