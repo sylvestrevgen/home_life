@@ -10,7 +10,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../../images/5.png);
+    background-image: url(../images/5.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,14 +74,14 @@
 
   .slider__arrow--back {
     left: -73px;
-    background-image: url(../../images/arrow-back.png);
+    background-image: url(../images/arrow-back.png);
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .slider__arrow--next {
     right: -73px;
-    background-image: url(../../images/arrow-next.png);
+    background-image: url(../images/arrow-next.png);
     background-repeat: no-repeat;
     background-position: center;
   }
