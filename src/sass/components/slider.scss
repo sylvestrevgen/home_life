@@ -1,28 +1,38 @@
-.slider-image-wrapper {
+.slider {
   position: relative;
   width: 100%;
-}
+  padding: 286px 0 336px 0;
+  overflow: hidden;
 
-.slider-text {
-  position: relative;
-  top: -530px;
-}
-
-.slider {
-  &__arrow {
+  &__slide {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  &__arrow--back {
-    top: 60%;
-    left: -73px;
+    top: 0;
+    left: 0;
+    background-image: url(../../images/5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+
   }
 
-  &__arrow--next {
-    top: 60%;
-    right: -73px;
+  &__title {
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 39px;
+    font-family: 'AvenirNext';
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+
+  &__button {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   &__pagination {
@@ -55,20 +65,28 @@
   
   }
 
-  &__title {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 39px;
-    font-family: 'AvenirNext';
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 60px;
-    width: 720px;
-    text-transform: uppercase;
+  .slider__arrow {
+    position: absolute;
+    top: 50%;
+    width: 21px;
+    height: 40px;
   }
 
-  &__button {
-    font-size: 16px;
-    line-height: 20px;
+  .slider__arrow--back {
+    left: -73px;
+    background-image: url(../../images/arrow-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
   }
+
+  .slider__arrow--next {
+    right: -73px;
+    background-image: url(../../images/arrow-next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.slider-text {
+  position: relative;
 }

@@ -459,7 +459,7 @@ body {
   font-family: 'AvenirNext';
   font-weight: 500;
   font-style: normal;
-  color: #010101;
+  color: rgba(1, 1, 1, 0.87);
   font-size: 16px;
   line-height: 20px;
 }
@@ -525,7 +525,7 @@ body {
 }
 
 .menu__link {
-  color: #010101;
+  color: rgba(1, 1, 1, 0.87);
   transition: color 0.2s linear;
 }
 
@@ -547,31 +547,41 @@ body {
   margin-bottom: 18px;
 }
 
-.slider-image-wrapper {
+.slider {
   position: relative;
   width: 100%;
+  padding: 286px 0 336px 0;
+  overflow: hidden;
 }
 
-.slider-text {
-  position: relative;
-  top: -530px;
-}
-
-.slider__arrow {
+.slider__slide {
+  width: 100%;
+  height: 100%;
   position: absolute;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  cursor: pointer;
+  top: 0;
+  left: 0;
+  background-image: url(../../images/5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
-.slider__arrow--back {
-  top: 60%;
-  left: -73px;
+.slider__title {
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 39px;
+  font-family: 'AvenirNext';
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: uppercase;
+  background-color: transparent;
 }
 
-.slider__arrow--next {
-  top: 60%;
-  right: -73px;
+.slider__button {
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .slider__pagination {
@@ -603,19 +613,27 @@ body {
   border: 13px solid #ffbb00;
 }
 
-.slider__title {
-  padding: 0;
-  margin: 0;
-  margin-bottom: 39px;
-  font-family: 'AvenirNext';
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 60px;
-  width: 720px;
-  text-transform: uppercase;
+.slider .slider__arrow {
+  position: absolute;
+  top: 50%;
+  width: 21px;
+  height: 40px;
 }
 
-.slider__button {
-  font-size: 16px;
-  line-height: 20px;
+.slider .slider__arrow--back {
+  left: -73px;
+  background-image: url(../../images/arrow-back.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider .slider__arrow--next {
+  right: -73px;
+  background-image: url(../../images/arrow-next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-text {
+  position: relative;
 }
