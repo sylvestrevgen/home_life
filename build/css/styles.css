@@ -434,15 +434,15 @@ template {
 @font-face {
   font-family: "AvenirNext";
   src: url("../fonts/AvenirNext-DemiBold.woff") format("woff"), url("../fonts/AvenirNext-DemiBold.woff") format("woff2");
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 600;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "AvenirNext";
   src: url("../fonts/AvenirNext-DemiBold.woff2") format("woff"), url("../fonts/AvenirNext-DemiBold.woff2") format("woff2");
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 600;
+  font-style: nprmal;
 }
 
 html {
@@ -636,4 +636,85 @@ body {
 
 .slider-text {
   position: relative;
+}
+
+.advantages {
+  padding: 101px 0 110px 0;
+}
+
+.advantages__cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  width: 350px;
+}
+
+.advantages__item--1 {
+  padding: 0 69px;
+}
+
+.advantages__item--2 {
+  padding: 0 80px;
+}
+
+.advantages__item--3 {
+  padding: 0 44px;
+}
+
+.advantages__image {
+  width: 87px;
+  height: 88px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.advantages__image--1 {
+  background-image: url(../images/individuality.png);
+}
+
+.advantages__image--2 {
+  background-image: url(../images/eco.png);
+}
+
+.advantages__image--3 {
+  background-image: url(../images/quality.png);
+}
+
+.advantages__title {
+  margin: 0;
+  padding: 0;
+  color: rgba(1, 1, 1, 0.87);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.advantages__subtitle {
+  margin: 0;
+  padding: 0;
+  color: rgba(1, 1, 1, 0.87);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.advantages__caption {
+  margin: 0;
+  color: rgba(1, 1, 1, 0.87);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.advantages__caption--3 {
+  padding: 0 34px;
 }

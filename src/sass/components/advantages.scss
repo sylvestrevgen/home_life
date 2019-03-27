@@ -1,0 +1,80 @@
+.advantages {
+  padding: 101px 0 110px 0;
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 350px;
+  }
+
+  &__item--1 {
+    padding: 0 69px;
+  }
+
+  &__item--2 {
+    padding: 0 80px;
+  }
+
+  &__item--3 {
+    padding: 0 44px;
+  }
+
+  &__image {
+    width: 87px;
+    height: 88px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__image--1 {
+    background-image: url(../images/individuality.png);
+  }
+
+  &__image--2 {
+    background-image: url(../images/eco.png);
+  }
+
+  &__image--3 {
+    background-image: url(../images/quality.png);
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    color: $main-text-color;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    color: $main-text-color;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__caption {
+    margin: 0;
+    color: $main-text-color;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  &__caption--3 {
+    padding: 0 34px;
+  }
+}
