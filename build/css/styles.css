@@ -771,3 +771,47 @@ body {
   font-size: 16px;
   line-height: 24px;
 }
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-us__text {
+  width: 543px;
+  padding-right: 30px;
+}
+
+.about-us__title {
+  margin: 0;
+  padding: 0;
+  color: rgba(1, 1, 1, 0.87);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 22px;
+}
+
+.about-us__caption {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.about-us__button {
+  margin-bottom: 150px;
+}
+
+.about-us__say {
+  margin: 0;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 24px;
+}
+
+.about-us__accent {
+  font-size: 60px;
+  letter-spacing: 3px;
+}

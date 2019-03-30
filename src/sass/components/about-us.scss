@@ -1,0 +1,43 @@
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__text {
+    width: 543px;
+    padding-right: 30px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    color: $main-text-color;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 22px;
+  }
+
+  &__caption {
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__button {
+    margin-bottom: 150px;
+  }
+
+  &__say {
+    margin: 0;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 24px;
+  }
+
+  &__accent {
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+}
