@@ -487,6 +487,10 @@ body {
   margin: 0;
 }
 
+.block {
+  display: block;
+}
+
 .button {
   display: block;
   border: none;
@@ -618,6 +622,7 @@ body {
   top: 50%;
   width: 21px;
   height: 40px;
+  cursor: pointer;
 }
 
 .slider .slider__arrow--back {
@@ -776,6 +781,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 57px;
 }
 
 .about-us__text {
@@ -814,4 +820,61 @@ body {
 .about-us__accent {
   font-size: 60px;
   letter-spacing: 3px;
+}
+
+.footer {
+  background-color: rgba(209, 209, 209, 0.87);
+  padding: 18px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-menu__item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.footer-menu__link {
+  color: rgba(1, 1, 1, 0.87);
+  transition: color 0.2s linear;
+}
+
+.footer-menu__link:hover {
+  color: #ffbb00;
+}
+
+.footer-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-images__logo {
+  margin-bottom: 15px;
+}
+
+.footer-images__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-images__socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  text-align: right;
+}
+
+.footer-contacts__title {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.footer-contacts__phone {
+  margin-bottom: 5px;
 }
