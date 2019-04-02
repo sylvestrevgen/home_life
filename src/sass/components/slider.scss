@@ -71,6 +71,12 @@
     width: 21px;
     height: 40px;
     cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.2s linear;
+
+    &:hover {
+      transform: scale(1.5);     
+    }
   }
 
   .slider__arrow--back {

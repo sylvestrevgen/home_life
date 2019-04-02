@@ -498,10 +498,17 @@ body {
   font-family: 'AvenirNext';
   font-weight: 500;
   width: 207px;
-  padding: 18px 0;
+  height: 49px;
   border-radius: 24px;
+  border: 5px solid transparent;
   background-color: #ffbb00;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  border: 5px solid rgba(255, 187, 0, 0.4);
 }
 
 .header-wrapper {
@@ -526,6 +533,10 @@ body {
   align-items: center;
   margin-right: 69px;
   min-width: 435px;
+}
+
+.menu__item {
+  margin-bottom: 5px;
 }
 
 .menu__link {
@@ -623,6 +634,16 @@ body {
   width: 21px;
   height: 40px;
   cursor: pointer;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.slider .slider__arrow:hover {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .slider .slider__arrow--back {
@@ -877,4 +898,27 @@ body {
 
 .footer-contacts__phone {
   margin-bottom: 5px;
+}
+
+@media (max-width: 1270px) {
+  .container {
+    width: 968px;
+  }
+
+  .advantages__item--1 {
+    padding: 0 30px;
+  }
+
+  .advantages__item--2 {
+    padding: 0 30px;
+  }
+
+  .advantages__item--3 {
+    padding: 0 30px;
+  }
+
+  .about-us__text {
+    width: 460px;
+    padding-right: 0;
+  }
 }

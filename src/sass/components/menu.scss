@@ -4,6 +4,10 @@
   align-items: center;
   margin-right: 69px;
   min-width: 435px;
+
+  &__item {
+    margin-bottom: 5px;
+  }
 }
 
 .menu__link {

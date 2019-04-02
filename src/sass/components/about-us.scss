@@ -42,3 +42,10 @@
     letter-spacing: 3px;
   }
 }
+
+@media (max-width: 1270px) {
+  .about-us__text {
+    width: 460px;
+    padding-right: 0;
+  }
+}
